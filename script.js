@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const telegramLinks = document.querySelectorAll('a[href*="t.me"]');
     // Ensure all Telegram links point to the correct address
     telegramLinks.forEach(link => {
-        link.href = "https://t.me/+niyaR1SdE_M2MzFl";
+        link.href = "https://t.me/+RQVJoOxDhBY0YjFl";
     });
 });
 
@@ -102,7 +102,7 @@ window.addEventListener('scroll', function() {
 function updateTelegramUsername() {
     const telegramLinks = document.querySelectorAll('a[href*="t.me"]');
     telegramLinks.forEach(link => {
-        link.href = "https://t.me/+niyaR1SdE_M2MzFl";
+        link.href = "https://t.me/+RQVJoOxDhBY0YjFl";
     });
 }
 
