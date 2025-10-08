@@ -1,146 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '755623087154193');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=755623087154193&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avaitor Tool </title>
-    <!-- Tailwind CSS CDN for styling -->
+    <title>TRADER SUCCESS - Join Free Telegram</title>
+    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'telegram-blue': '#0088cc',
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        .video-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
-            z-index: -1;
+        /* Define the 'Inter' font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; /* Light off-white background */
         }
-        @keyframes blink {
-            0%, 100% {
-                background-image: linear-gradient(135deg, #00d4ff, #0099cc);
-                box-shadow: 0 10px 30px rgba(0, 212, 255, 0.4);
-            }
-            50% {
-                background-image: linear-gradient(135deg, #000, #333);
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-            }
+        .logo-ring {
+            /* Mimics the yellow ring around the logo */
+            box-shadow: 0 0 0 8px rgba(255, 193, 7, 0.7);
         }
-        .join-button.animate-blink {
-            animation: blink 1s infinite;
+        .cta-button {
+            /* Subtle shadow and hover effect for the main button */
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
         }
-        .content-container {
-            backdrop-filter: blur(5px);
-            background-color: rgba(17, 24, 39, 0.7);
+        .cta-button:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
         }
-        .no-wrap-heading {
-            white-space: nowrap;
+        .timer-unit {
+            /* Styles for the individual timer boxes */
+            width: 60px;
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #1f2937; /* Dark background for digits */
+            color: #fff;
+            border-radius: 8px;
         }
+        .timer-digit {
+            font-size: 1.75rem; /* 28px */
+            line-height: 1;
+            font-weight: 800;
+        }
+        .timer-label {
+            font-size: 0.65rem; /* 10.4px */
+            line-height: 1;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-top: 2px;
+            color: #9ca3af; /* Light gray label */
+        }
+        
     </style>
 </head>
-<body class="bg-black text-white font-sans overflow-x-hidden">
+<body class="flex items-center justify-center min-h-screen p-4">
 
-    <!-- Video Background -->
-    <video id="bgVideo" class="video-background" autoplay muted loop preload="auto" playsinline>
-        <source src="video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
-    <!-- Main content -->
-    <div class="relative z-10 min-h-screen flex flex-col items-center justify-center p-5 text-center content-container">
-
-        <!-- Logo -->
-        <img src="logo.png.jpg" alt="Trader Success Logo" class="w-32 h-32 rounded-full mb-4 shadow-lg ring-4 ring-blue-500 transform transition-transform duration-300 hover:scale-105" onerror="this.src='https://placehold.co/128x128/00d4ff/000?text=Logo'"> 
-
-        <!-- Title -->
-        <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-2 tracking-wide drop-shadow-2xl no-wrap-heading">
-           Aviator Tool 📊
-        </h1>
-
-        <!-- Divider -->
-        <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-md mb-6 animate-pulse"></div>
-
-        <!-- Join Telegram Button -->
-        <a href="https://t.me/+-YVuudiFwM41MTRl" class="join-button bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 uppercase tracking-wider animate-blink" id="joinButtonTop">
-            📈 Join Telegram Channel
-        </a>
-
-        <!-- Updated Content Section -->
-        <div class="max-w-xl my-4 text-white">
-            <h3 class="text-2xl font-bold mb-2 text-blue-300 drop-shadow-lg">
-                1. Powerfull <br>
-                2. Limited  <br>
-                3. 24/7 Expert Guidance 
-            </h3>
-            <p class="text-base text-gray-200 leading-relaxed drop-shadow-md">
+    <!-- Main Content Container -->
+    <div class="w-full max-w-sm mx-auto py-8 bg-white p-6 rounded-2xl shadow-2xl text-center">
+        
+        <!-- 2. Logo Section: TRADER SUCCESS Logo -->
+        <div class="pt-0">
+            <div class="w-36 h-36 mx-auto mb-6 rounded-full logo-ring p-1 flex flex-col items-center justify-center bg-gray-900 border-4 border-yellow-400 overflow-hidden">
+                <!-- Logo file in same folder with placeholder/fallback -->
+                <img src="logo.png" alt="Trader Success Logo" 
+                     class="w-full h-full object-cover" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/128x128/FFC107/000?text=TRADER+SUCCESS'">
+            </div>
+    
+            <!-- 3. Key Message 1 -->
+            <p class="text-lg text-gray-700 mb-2">
+                Recover Your Binary Losses With 👇
+            </p>
+    
+            <!-- 4. Key Message 2 (New Branding) -->
+            <h1 class="text-3xl font-extrabold text-gray-900 mb-6">
+                <span class="border-b-4 border-yellow-400">TRADER SUCCESS</span>
+            </h1>
+    
+            <!-- 5. Primary CTA Button -->
+            <a href="https://t.me/+ivVmOeKGtKowNWNl"
+               target="_blank"
+               id="joinButton"
+               class="cta-button bg-telegram-blue text-white font-extrabold py-4 px-6 rounded-xl text-xl uppercase tracking-wider mb-8 w-full flex items-center justify-center space-x-3">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M21.5 2.15a1.5 1.5 0 0 0-1.74-.68L2 9.5a1.5 1.5 0 0 0 .8 2.87l4.88 1.43 11.23-7.14a.5.5 0 0 1 .63.78l-8.68 8.68a1.5 1.5 0 0 0-.27 2.12L7.5 21.5a1.5 1.5 0 0 0 2.87.8l7.85-18.76a1.5 1.5 0 0 0-.68-1.74z"/>
+                </svg>
+                <span>Join Free Telegram</span>
+            </a>
+    
+            <!-- 6. Countdown Timer Section -->
+            <div class="mb-8">
+                <div id="countdown-timer" class="flex justify-center items-center space-x-2">
+                    <!-- Timer units will be inserted here by JavaScript -->
+                </div>
+                <p id="timer-message" class="mt-4 text-sm font-semibold text-red-600"></p>
+            </div>
+    
+            <!-- 7. Key Message 3 -->
+            <p class="text-xl font-bold text-gray-800 mb-4">
+                Join My Telegram & Become Profitable Loss Free
+            </p>
+            <p class="text-2xl mb-4">
+                <span class="text-green-500">✅</span>
+            </p>
+    
+            <!-- 8. Proof/Benefit -->
+            <p class="text-lg font-bold text-gray-800 bg-yellow-100 p-2 rounded-lg">
+                GET 95-99% ACCURATE SIGNALS DAILY 💰
             </p>
         </div>
-
-        <!-- Countdown Timer -->
-        <div class="bg-gray-800 bg-opacity-80 p-6 rounded-2xl border-2 border-blue-400 shadow-xl my-5">
-            <div class="text-red-400 font-bold text-lg mb-2 drop-shadow-sm">
-                ⚡ LIMITED TIME OFFER!
-            </div>
-            <div id="countdown" class="text-5xl font-extrabold text-blue-400 drop-shadow-lg mb-2">
-                00:05
-            </div>
-            <div class="text-gray-300 text-sm">
-                This page will redirect automatically
-            </div>
-        </div>
-
-        <!-- Final Call to Action button -->
-        <a href="https://t.me/+-YVuudiFwM41MTRl" class="join-button bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 uppercase tracking-wider" id="joinButtonBottom">
-            🚀 Join Telegram Now!
-        </a>
     </div>
 
-    <!-- Scripts (Pixel + Timer same as before) -->
+    <!-- JavaScript for Countdown Timer and Tracking -->
     <script>
-        const redirectUrl = 'https://t.me/+-YVuudiFwM41MTRl';
-        let timeLeft = 05;
-        const timerElement = document.getElementById('countdown');
+        // --- Countdown Timer Logic ---
+        const countdownContainer = document.getElementById('countdown-timer');
+        const timerMessage = document.getElementById('timer-message');
+        
+        // Initial duration in seconds (5 seconds as requested)
+        // Note: For a real-world app, this should be a much longer duration (e.g., 24 * 60 * 60)
+        const initialDuration = 5; 
+        
+        // Use localStorage to persist the countdown end time
+        let endTime = localStorage.getItem('countdownEndTime');
+        
+        // Check if the timer has expired or if there's no stored time
+        if (!endTime || new Date().getTime() > parseInt(endTime)) {
+            // Set new end time 5 seconds from now
+            endTime = new Date().getTime() + initialDuration * 1000;
+            localStorage.setItem('countdownEndTime', endTime);
+        }
 
+        const countdownTarget = parseInt(endTime);
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = countdownTarget - now;
+            
+            // Time calculations for days, hours, minutes and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            let html = '';
+            let separator = '<span class="text-2xl font-extrabold text-gray-700">:</span>';
+
+            if (distance < 0) {
+                // Timer finished: reset timer in localStorage and reload the page
+                localStorage.removeItem('countdownEndTime');
+                timerMessage.textContent = 'Offer refreshing...';
+                clearInterval(timerInterval);
+                window.location.reload();
+                return;
+            }
+
+            // Build the HTML for the timer (Displays all units, even if mostly zero due to 5-sec duration)
+            html += `<div class="timer-unit">
+                        <span class="timer-digit">${String(days).padStart(2, '0')}</span>
+                        <span class="timer-label">DAYS</span>
+                    </div>`;
+            html += separator;
+            html += `<div class="timer-unit">
+                        <span class="timer-digit">${String(hours).padStart(2, '0')}</span>
+                        <span class="timer-label">HOURS</span>
+                    </div>`;
+            html += separator;
+            html += `<div class="timer-unit">
+                        <span class="timer-digit">${String(minutes).padStart(2, '0')}</span>
+                        <span class="timer-label">MINUTES</span>
+                    </div>`;
+            html += separator;
+            html += `<div class="timer-unit">
+                        <span class="timer-digit">${String(seconds).padStart(2, '0')}</span>
+                        <span class="timer-label">SECONDS</span>
+                    </div>`;
+            
+            countdownContainer.innerHTML = html;
+        }
+
+        // Run the timer immediately and then every second
+        updateCountdown();
+        const timerInterval = setInterval(updateCountdown, 1000);
+
+        // --- Mock Tracking Script (Kept for completeness) ---
         function trackTelegramClick() {
             console.log('Tracking Telegram click...');
-            fbq('track', 'ClickToTelegram', { value: 1, currency: 'INR' });
+            // In a real application, you would fire analytics events here
         }
 
-        function updateTimer() {
-            const minutes = Math.floor(timeLeft / 60);
-            const seconds = timeLeft % 60;
-            timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-            if (timeLeft <= 0) {
-                trackTelegramClick();
-                window.location.href = redirectUrl;
-            } else {
-                timeLeft--;
-                setTimeout(updateTimer, 1000);
-            }
-        }
-
-        document.getElementById('joinButtonTop').addEventListener('click', trackTelegramClick);
-        document.getElementById('joinButtonBottom').addEventListener('click', trackTelegramClick);
-        window.addEventListener('load', () => {
-            updateTimer();
-        });
+        document.getElementById('joinButton').addEventListener('click', trackTelegramClick);
     </script>
 </body>
 </html>
