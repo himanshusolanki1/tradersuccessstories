@@ -128,9 +128,10 @@
         // --- Countdown Timer Logic ---
         const countdownContainer = document.getElementById('countdown-timer');
         const timerMessage = document.getElementById('timer-message');
+        const joinButton = document.getElementById('joinButton');
+        const telegramUrl = joinButton.href; // Get the target URL from the button
         
         // Initial duration in seconds (5 seconds as requested)
-        // Note: For a real-world app, this should be a much longer duration (e.g., 24 * 60 * 60)
         const initialDuration = 5; 
         
         // Use localStorage to persist the countdown end time
@@ -159,15 +160,15 @@
             let separator = '<span class="text-2xl font-extrabold text-gray-700">:</span>';
 
             if (distance < 0) {
-                // Timer finished: reset timer in localStorage and reload the page
-                localStorage.removeItem('countdownEndTime');
-                timerMessage.textContent = 'Offer refreshing...';
+                // Timer finished: AUTOMATIC REDIRECTION
+                timerMessage.textContent = 'Redirecting to Telegram group...';
                 clearInterval(timerInterval);
-                window.location.reload();
+                // Redirect the user to the Telegram URL
+                window.location.href = telegramUrl; 
                 return;
             }
 
-            // Build the HTML for the timer (Displays all units, even if mostly zero due to 5-sec duration)
+            // Build the HTML for the timer
             html += `<div class="timer-unit">
                         <span class="timer-digit">${String(days).padStart(2, '0')}</span>
                         <span class="timer-label">DAYS</span>
@@ -201,6 +202,7 @@
             // In a real application, you would fire analytics events here
         }
 
+        // Attach tracker only to manual click
         document.getElementById('joinButton').addEventListener('click', trackTelegramClick);
     </script>
 </body>
