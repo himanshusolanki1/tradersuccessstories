@@ -20,7 +20,8 @@ src="https://www.facebook.com/tr?id=1310008790913189&ev=PageView&noscript=1"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRADER SUCCESS - Join Free Telegram</title>
+    <!-- 1. Title Changed -->
+    <title>LUCKY TRADING - Join Free Telegram</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -42,8 +43,8 @@ src="https://www.facebook.com/tr?id=1310008790913189&ev=PageView&noscript=1"
             background-color: #f7f7f7; /* Light off-white background */
         }
         .logo-ring {
-            /* Mimics the yellow ring around the logo */
-            box-shadow: 0 0 0 8px rgba(255, 193, 7, 0.7);
+            /* 2. Changed ring color to green */
+            box-shadow: 0 0 0 8px rgba(34, 197, 94, 0.7); /* green-500 */
         }
         .cta-button {
             /* Subtle shadow and hover effect for the main button */
@@ -87,26 +88,28 @@ src="https://www.facebook.com/tr?id=1310008790913189&ev=PageView&noscript=1"
     <!-- Main Content Container -->
     <div class="w-full max-w-sm mx-auto py-8 bg-white p-6 rounded-2xl shadow-2xl text-center">
         
-        <!-- 2. Logo Section: TRADER SUCCESS Logo -->
+        <!-- 2. Logo Section: LUCKY TRADING Logo -->
         <div class="pt-0">
-            <div class="w-36 h-36 mx-auto mb-6 rounded-full logo-ring p-1 flex flex-col items-center justify-center bg-gray-900 border-4 border-yellow-400 overflow-hidden">
-                <!-- Logo file in same folder with placeholder/fallback -->
-                <img src="logo.png" alt="Trader Success Logo" 
+            <!-- 3. Logo border changed to green -->
+            <div class="w-36 h-36 mx-auto mb-6 rounded-full logo-ring p-1 flex flex-col items-center justify-center bg-gray-900 border-4 border-green-500 overflow-hidden">
+                <!-- 4. Alt text and fallback URL changed -->
+                <img src="logo.png" alt="Lucky Trading Logo" 
                      class="w-full h-full object-cover" 
-                     onerror="this.onerror=null; this.src='https://placehold.co/128x128/FFC107/000?text=TRADER+SUCCESS'">
+                     onerror="this.onerror=null; this.src='https://placehold.co/128x128/22C55E/FFF?text=LUCKY+TRADING'">
             </div>
     
-            <!-- 3. Key Message 1 -->
+            <!-- 5. Key Message 1 (New): Updated to reflect AI/Leaderboard -->
             <p class="text-lg text-gray-700 mb-2">
-                Recover Your Binary Losses With 👇
+                Powered by AI & a Top Ranked Trader 👇
             </p>
     
-            <!-- 4. Key Message 2 (New Branding) -->
+            <!-- 6. Key Message 2 (New Branding): LUCKY TRADING -->
             <h1 class="text-3xl font-extrabold text-gray-900 mb-6">
-                <span class="border-b-4 border-yellow-400">TRADER SUCCESS</span>
+                <!-- 7. Border color changed to green -->
+                <span class="border-b-4 border-green-500">LUCKY TRADING</span>
             </h1>
     
-            <!-- 5. Primary CTA Button -->
+            <!-- 8. Primary CTA Button (Unchanged) -->
             <a href="https://t.me/+ivVmOeKGtKowNWNl"
                target="_blank"
                id="joinButton"
@@ -117,7 +120,7 @@ src="https://www.facebook.com/tr?id=1310008790913189&ev=PageView&noscript=1"
                 <span>Join Free Telegram</span>
             </a>
     
-            <!-- 6. Countdown Timer Section -->
+            <!-- 9. Countdown Timer Section (Unchanged) -->
             <div class="mb-8">
                 <div id="countdown-timer" class="flex justify-center items-center space-x-2">
                     <!-- Timer units will be inserted here by JavaScript -->
@@ -125,22 +128,22 @@ src="https://www.facebook.com/tr?id=1310008790913189&ev=PageView&noscript=1"
                 <p id="timer-message" class="mt-4 text-sm font-semibold text-red-600"></p>
             </div>
     
-            <!-- 7. Key Message 3 -->
-            <p class="text-xl font-bold text-gray-800 mb-4">
-                Join My Telegram & Become Profitable Loss Free
-            </p>
-            <p class="text-2xl mb-4">
-                <span class="text-green-500">✅</span>
-            </p>
-    
-            <!-- 8. Proof/Benefit -->
-            <p class="text-lg font-bold text-gray-800 bg-yellow-100 p-2 rounded-lg">
-                GET 95-99% ACCURATE SIGNALS DAILY 💰
-            </p>
+            <!-- 10. New Proof/Benefit Section -->
+            <div class="space-y-3">
+                <p class="text-lg font-bold text-gray-800 bg-green-100 p-3 rounded-lg flex items-center justify-center space-x-2">
+                    <span>🏆</span>
+                    <span>Top Leaderboard Ranked Trader</span>
+                </p>
+                <p class="text-lg font-bold text-gray-800 bg-yellow-100 p-3 rounded-lg flex items-center justify-center space-x-2">
+                    <span>🤖</span>
+                    <span>95-99% Accurate AI Signals</span>
+                </p>
+            </div>
+
         </div>
     </div>
 
-    <!-- JavaScript for Countdown Timer and Tracking -->
+    <!-- JavaScript for Countdown Timer and Tracking (Unchanged) -->
     <script>
         // --- Countdown Timer Logic ---
         const countdownContainer = document.getElementById('countdown-timer');
