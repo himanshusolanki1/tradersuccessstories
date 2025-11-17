@@ -1,224 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Updated Title for Educational Focus -->
-    <title>LUCKY - Free Education</title>
+    <title>TRADER SUCCESS - Official Access</title>
+
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- META PIXEL CODE -->
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'telegram-blue': '#0088cc',
-                    }
-                }
-            }
-        }
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._ fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '803920772553128');
+        fbq('track', 'PageView');
     </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=803920772553128&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- END META PIXEL -->
+
     <style>
-        /* Define the 'Inter' font */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f7f7f7; /* Light off-white background */
+            /* Core background changed to White */
+            background-color: #ffffff;
+            /* Removed the chart background pattern */
+            background-size: cover;
         }
+
+        .main-card {
+            /* Inside background changed to Bright Yellow */
+            background-color: #fce303; 
+            /* Adjusted padding to match the look */
+            padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+        }
+
+        .logo-container {
+            /* Position the logo in the center, overlapping the background */
+            position: relative;
+            margin-top: -60px; /* Pull the logo up */
+            margin-bottom: 10px;
+        }
+
         .logo-ring {
-            /* Ring color remains green (associated with growth/finance) */
-            box-shadow: 0 0 0 8px rgba(34, 197, 94, 0.7); /* green-500 */
-        }
-        .cta-button {
-            /* Subtle shadow and hover effect for the main button */
-            transition: all 0.2s ease-in-out;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-        }
-        .cta-button:hover {
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-            transform: translateY(-2px);
-        }
-        .timer-unit {
-            /* Styles for the individual timer boxes */
-            width: 60px;
-            height: 60px;
+            border-radius: 50%;
+            border: 4px solid #ffffff; /* White border as seen in image */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #1f2937; /* Dark background for digits */
-            color: #fff;
+            background-color: #000; /* Black background for the logo circle */
+        }
+
+        .verify-badge {
+            position: absolute;
+            bottom: 0;
+            right: 15%; /* Adjusted for a natural look */
+            background-color: #3b82f6; /* Blue for the checkmark */
+            color: white;
+            border-radius: 50%;
+            padding: 2px;
+            font-size: 14px;
+            /* Border color must match the new main-card background */
+            border: 2px solid #fce303; 
+            z-index: 10;
+        }
+
+        .info-button {
+            /* Light yellow button for the first callout */
+            background-color: #ffffcc;
+            color: #333333;
             border-radius: 8px;
+            padding: 1.25rem 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.1s ease;
         }
-        .timer-unit-lg {
-             /* Responsive scaling for larger screens */
-            width: 70px;
-            height: 70px;
+        .info-button:active { transform: scale(0.98); }
+
+        .cta-button-secondary {
+            /* Yellow/Cream button for the second callout */
+            background-color: #fcf8d4;
+            color: #1e40af; /* Dark blue text */
+            border-radius: 8px;
+            padding: 1.25rem 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.1s ease;
         }
-        .timer-digit {
-            font-size: 1.75rem; /* 28px */
-            line-height: 1;
-            font-weight: 800;
+        .cta-button-secondary:active { transform: scale(0.98); }
+
+        .cta-button-main {
+            /* Primary Telegram button */
+            background-color: #0088cc; /* Telegram Blue */
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
         }
-        .timer-label {
-            font-size: 0.65rem; /* 10.4px */
-            line-height: 1;
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-top: 2px;
-            color: #9ca3af; /* Light gray label */
+        .cta-button-main:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
         }
-        
+        .cta-button-main:active { transform: scale(0.98); }
     </style>
+
 </head>
-<body class="flex items-center justify-center min-h-screen p-4">
 
-    <!-- Main Content Container -->
-    <div class="w-full max-w-sm mx-auto py-8 bg-white p-6 rounded-2xl shadow-2xl text-center">
-        
-        <!-- Logo Section: LUCKY TRADING Logo -->
-        <div class="pt-0">
-            <!-- Logo border uses Tailwind green -->
-            <div class="w-36 h-36 mx-auto mb-6 rounded-full logo-ring p-1 flex flex-col items-center justify-center bg-gray-900 border-4 border-green-500 overflow-hidden">
-                <img src="logo.png" alt="Lucky Trading Education Logo" 
-                    class="w-full h-full object-cover" 
-                    onerror="this.onerror=null; this.src='https://placehold.co/144x144/10B981/FFF?text=LUCKY+EDU'">
-            </div>
-            
-            <!-- Updated Key Message 1: Focus on Education/Insight -->
-            <p class="text-lg text-gray-700 mb-2 font-semibold">
-                Access Daily Educational Insights
-            </p>
-            
-            <!-- Key Message 2: Brand Name -->
-            <h1 class="text-3xl font-extrabold text-gray-900 mb-6">
-                <!-- Border color changed to green -->
-                <span class="border-b-4 border-green-500">LUCKY </span>
-            </h1>
-            
-            <!-- Primary CTA Button (Link retained, no auto-click) -->
-            <a href="https://t.me/+L-RkZVZIYcZhNzM1"
-                target="_blank"
-                id="joinButton"
-                class="cta-button bg-telegram-blue text-white font-extrabold py-4 px-6 rounded-xl text-xl uppercase tracking-wider mb-8 w-full flex items-center justify-center space-x-3">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M21.5 2.15a1.5 1.5 0 0 0-1.74-.68L2 9.5a1.5 1.5 0 0 0 .8 2.87l4.88 1.43 11.23-7.14a.5.5 0 0 1 .63.78l-8.68 8.68a1.5 1.5 0 0 0-.27 2.12L7.5 21.5a1.5 1.5 0 0 0 2.87.8l7.85-18.76a1.5 1.5 0 0 0-.68-1.74z"/>
-                </svg>
-                <span>Join Free Telegram</span>
-            </a>
-            
-            <!-- Countdown Timer Section (Now non-critical availability indicator) -->
-            <div class="mb-8">
-                <p class="text-sm font-semibold text-gray-600 mb-2">
-                    Access Window Closing In:
-                </p>
-                <div id="countdown-timer" class="flex justify-center items-center space-x-2">
-                    <!-- Timer units will be inserted here by JavaScript -->
+<!-- With a white background, we need to add some vertical space (py-10) to center the card slightly -->
+<body class="flex flex-col items-center justify-start min-h-screen py-10 px-4 bg-white">
+
+    <!-- Card Container -->
+    <div class="w-full max-w-sm rounded-xl overflow-visible text-center main-card shadow-2xl">
+
+        <!-- Logo/Header Section -->
+        <div class="logo-container mx-auto flex justify-center">
+            <div class="relative">
+                <div class="logo-ring">
+                    <!-- Placeholder: Please ensure 'logo.png' is available at your deployment root -->
+                    <img src="logo.png" class="w-full h-full object-cover" alt="Lucky Trading Logo" onerror="this.onerror=null; this.src='https://placehold.co/100x100/000/fff?text=LOGO';" />
                 </div>
-                <p id="timer-message" class="mt-4 text-sm font-semibold text-red-600"></p>
+                <!-- Verification Badge -->
+                <span class="verify-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                </span>
             </div>
-            
-            <!-- New Educational Benefit Section (Replacing Accuracy Claims) -->
-            <div class="space-y-3">
-                <p class="text-base font-medium text-gray-800 bg-indigo-100 p-3 rounded-lg flex items-center justify-center space-x-2">
-                    <span>💡</span>
-                    <span>Learn Fundamental & Technical Analysis</span>
-                </p>
-                <p class="text-base font-medium text-gray-800 bg-yellow-100 p-3 rounded-lg flex items-center justify-center space-x-2">
-                    <span>📚</span>
-                    <span>Free Educational Resources and Guides</span>
-                </p>
-                <p class="text-base font-medium text-gray-800 bg-green-100 p-3 rounded-lg flex items-center justify-center space-x-2">
-                    <span>🤝</span>
-                    <span>Discuss Strategies with Fellow Traders</span>
-                </p>
-            </div>
-
         </div>
+
+        <!-- Channel Title and User Count -->
+        <h1 class="text-3xl font-extrabold text-gray-800 mt-2">
+            TRADER SUCCESS
+        </h1>
+
+        <p class="text-base font-semibold text-gray-700 mt-1 mb-6">
+            Join 20000 Active Users** Every Month
+        </p>
+
+        <!-- Secondary CTA Buttons -->
+        <!-- First Info Button (The #1 Trading Channel) -->
+        <a href="https://t.me/+JHddJXNvuDwwZmQ1" target="_blank" class="info-button w-full block">
+            <p class="text-lg font-bold">
+                📈 The #1 Trading Channel - Make Your First Profit Today!
+            </p>
+        </a>
+
+        <!-- Second Info Button (Start Trading & Making Money) -->
+        <a href="https://t.me/+JHddJXNvuDwwZmQ1" target="_blank" class="cta-button-secondary w-full block">
+            <p class="text-lg font-bold flex items-center justify-center">
+                <span class="text-blue-600 mr-2">&bull;</span> Start Trading & Making Money
+            </p>
+        </a>
+
+        <!-- Primary CTA Button (JOIN TELEGRAM) -->
+        <a href="https://t.me/+JHddJXNvuDwwZmQ1"
+           target="_blank"
+           id="joinButton"
+           class="cta-button-main text-white font-extrabold py-3 px-6 rounded-lg text-xl uppercase tracking-wider w-full block">
+            JOIN TELEGRAM <span class="ml-2">📊</span>
+        </a>
+
+        <!-- Footer Text -->
+        <p class="text-xs text-gray-700 mt-3 font-medium">
+            If You Have Telegram, You Can Run Cyber Binary Trading Immediately
+        </p>
+
     </div>
 
-    <!-- JavaScript for Countdown Timer and Tracking -->
+    <!-- Auto Redirect Script -->
     <script>
-        // --- Countdown Timer Logic ---
-        const countdownContainer = document.getElementById('countdown-timer');
-        const timerMessage = document.getElementById('timer-message');
-        const joinButton = document.getElementById('joinButton');
-        
-        // Initial duration set to 24 hours (86400 seconds) for a regular cycle, not aggressive 5s
-        const initialDuration = 86400; 
-        
-        // Use localStorage to persist the countdown end time
-        let endTime = localStorage.getItem('countdownEndTime');
-        const now = new Date().getTime();
-        
-        // Check if the timer has expired or if there's no stored time
-        if (!endTime || now > parseInt(endTime)) {
-            // Set new end time 24 hours from now
-            endTime = now + initialDuration * 1000;
-            localStorage.setItem('countdownEndTime', endTime);
-        }
+        // Note: The REDIRECT_URL has been updated to the new link.
+        const REDIRECT_URL = "https://t.me/+JHddJXNvuDwwZmQ1";
+        // Timer changed from 10000ms to 30000ms (30 seconds)
+        const REDIRECT_DELAY_MS = 30000; 
 
-        const countdownTarget = parseInt(endTime);
+        document.addEventListener('DOMContentLoaded', () => {
+            const joinButton = document.getElementById('joinButton');
 
-        function updateCountdown() {
-            const currentNow = new Date().getTime();
-            let distance = countdownTarget - currentNow;
-            
-            // --- CRITICAL CHANGE: NO AUTO-REDIRECTION ---
-            if (distance < 0) {
-                // Timer finished: Reset timer for the next 24-hour cycle and update message
-                timerMessage.textContent = 'The free access window has cycled. Click "Join Free Telegram" now.';
-                distance = 0; // Display 00:00:00:00
-                
-                // Immediately reset the end time for the next 24-hour cycle to avoid staying at 0
-                const newEndTime = currentNow + initialDuration * 1000;
-                localStorage.setItem('countdownEndTime', newEndTime);
-                // Note: The timer will look like it stopped at 0 for one second, then jump to 24:00:00:00 on the next interval tick.
-            } else {
-                 timerMessage.textContent = ''; // Clear message if counting down
-            }
+            // Set the auto-redirect timer
+            const autoRedirect = setTimeout(() => {
+                console.log("Auto-redirecting to Telegram...");
+                // Trigger the Lead event on redirect
+                if (typeof fbq === 'function') {
+                    fbq('track', 'Lead', { method: 'AutoRedirect' });
+                }
+                window.location.href = REDIRECT_URL;
+            }, REDIRECT_DELAY_MS);
 
-            // Time calculations for days, hours, minutes and seconds
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // If the user clicks *any* button (including the main one or the secondary ones), we assume they are engaging
+            // Note: The selector uses 'https://t.me/'. Since all links are updated, this works correctly.
+            document.querySelectorAll('a[href^="https://t.me/"]').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    // Stop the auto-redirect if they manually click
+                    clearTimeout(autoRedirect);
+                    
+                    // Trigger the Lead event on manual click
+                    if (typeof fbq === 'function') {
+                        fbq('track', 'Lead', { method: 'ManualClick', url: e.currentTarget.href });
+                    }
 
-            let html = '';
-            let separator = '<span class="text-2xl font-extrabold text-gray-300 mx-1">:</span>';
+                    // Proceed with the navigation
+                });
+            });
 
-            // Function to create a timer unit
-            const createUnit = (value, label) => `
-                <div class="timer-unit">
-                    <span class="timer-digit">${String(value).padStart(2, '0')}</span>
-                    <span class="timer-label">${label}</span>
-                </div>
-            `;
-            
-            // Build the HTML for the timer
-            html += createUnit(days, 'DAYS');
-            html += separator;
-            html += createUnit(hours, 'HOURS');
-            html += separator;
-            html += createUnit(minutes, 'MINS');
-            html += separator;
-            html += createUnit(seconds, 'SECS');
-            
-            countdownContainer.innerHTML = html;
-        }
-
-        // Run the timer immediately and then every second
-        updateCountdown();
-        const timerInterval = setInterval(updateCountdown, 1000);
-
-        // --- Mock Tracking Script (Kept for completeness, no external tracking fires) ---
-        function trackTelegramClick() {
-            console.log('Tracking manual Telegram click for internal analytics...');
-            // In a real compliant application, this would only fire internal, non-PII analytics events
-        }
-
-        // Attach tracker only to manual click
-        document.getElementById('joinButton').addEventListener('click', trackTelegramClick);
+        });
     </script>
+
 </body>
 </html>
